@@ -39,4 +39,4 @@ Watch me code in Haskell for 25 days straight
 I am quite proud of my solution, I'm obviously just trying to show off here but it's fun. When I look back at my first solution last year, I feel like I've progressed quite a lot!
 
 ### Day 2:
-This one was easy, I am kind of disappointed that I couldn't do showy one-liners for the move and moveAndAim functions (I mean, I could with inline if-else I guess)
+This one was easy, I am kind of disappointed that I couldn't do showy one-liners for the move function (I mean, I could with inline if-else I guess)
