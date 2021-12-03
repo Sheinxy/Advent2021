@@ -42,7 +42,7 @@ main = do
   input <- parseInput . lines <$> readFile "input"
   let g = gamma input
   let e = epsilon input
-  print (g * e)
   let o = oxygen input
   let c = co2 input
+  print (g * e)
   print (c * o)
