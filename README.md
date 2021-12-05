@@ -9,7 +9,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 2
 - [x] Day 3
 - [x] Day 4
-- [ ] Day 5
+- [x] Day 5
 - [ ] Day 6
 - [ ] Day 7
 - [ ] Day 8
@@ -46,3 +46,6 @@ Okay this one was kind of a mess, the first part is pretty okay (I probably coul
 
 ### Day 4:
 Well, it may not be the most optimised, like I have to traverse the grid twice because I'm too lazy to do things better, but it works, it's readable and all, so yeah I'm kind of satisfied, oddly enough
+
+### Day 5:
+This one was easy and pretty straightforward, I'm happy with my solution. I just wish I could mix both parts into one but I can't
