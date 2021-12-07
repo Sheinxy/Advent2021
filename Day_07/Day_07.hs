@@ -14,18 +14,21 @@ median xs
         mid = len `div` 2
         sorted = sort xs
 
-fuelMed :: [Int] -> Int
-fuelMed xs = sum . map (abs . (-) med) $ xs
-  where med = median xs
+mean :: [Int] -> Int
+mean xs = fromIntegral $ round $ s / l
+  where s = fromIntegral $ sum xs
+        l = fromIntegral $ length xs
 
-fuelTo :: Int -> [Int] -> Int
-fuelTo x = sum . map (\xn -> sum [1 .. abs (xn - x)])
+fuelTo :: (Int -> Int -> Int) -> Int -> [Int] -> Int
+fuelTo cost x = sum . map (cost x)
 
-fuel :: [Int] -> Int
-fuel xs = minimum [fuelTo x sorted | x <- [head sorted .. last sorted]]
+fuel :: (([Int] -> Int), ([Int] -> Int)) -> (Int -> Int -> Int) -> [Int] -> Int
+fuel (start, end) cost xs = minimum [fuelTo cost x sorted | x <- [s .. e]]
   where sorted = sort xs
+        s = start xs
+        e = end xs
 
 main = do
   input <- parseInput <$> readFile "input"
-  print $ fuelMed input
-  print $ fuel input
+  print $ fuel (median, median) (\x xn -> abs (x - xn)) input
+  print $ fuel ((+) (-2) . mean, (+) 2 . mean) (\x xn -> sum [1 .. abs (x - xn)]) input
