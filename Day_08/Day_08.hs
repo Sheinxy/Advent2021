@@ -30,7 +30,7 @@ findMapping [one, seven, four, x1, x2, x3, x4, x5, x6, eight] = Map.fromList $ z
         three = findWith ((==) 5 . length . union one) $ [x1, x2, x3]
         five = findWith (\x -> x /= three && x /= two) $ [x1, x2, x3]
         six = findWith ((==) 7 . length . union one)  $ [x4, x5, x6]
-        nine = findWith ((==) 6 . length . union (union five one)) $ [x4, x5, x6]
+        nine = findWith ((==) 6 . length . union four) $ [x4, x5, x6]
         zero = findWith (\x -> x /= six && x /= nine) $ [x4, x5, x6]
 
 outputValue :: Entry -> Int
