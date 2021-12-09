@@ -12,7 +12,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 5
 - [x] Day 6
 - [x] Day 7
-- [ ] Day 8
+- [x] Day 8
 - [ ] Day 9
 - [ ] Day 10
 - [ ] Day 11
@@ -55,3 +55,6 @@ This one was really fun. Of course I first I did the most naive solution, but th
 
 ### Day 7:
 Okay I am really disappointed in myself for that one. I feel like there's a much better way of doing part 2, but I can't find it for now. I'm going to think a little bit more about it. Edit: Ok I am more satisfied now
+
+### Day 8:
+THIS ONE WAS INCREDIBLY FUN! I am actually quite happy with my solution. Although some would find it ugly and whatnot, I believe it is actually a good solution as it manages to be both simple to understand (basically the only weird thing to understand is the head . filter thingies, because I didn't want to use find because it didn't make sense to have Maybe here in my opinion)
