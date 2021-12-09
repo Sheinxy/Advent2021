@@ -13,7 +13,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 6
 - [x] Day 7
 - [x] Day 8
-- [ ] Day 9
+- [x] Day 9
 - [ ] Day 10
 - [ ] Day 11
 - [ ] Day 12
@@ -58,3 +58,6 @@ Okay I am really disappointed in myself for that one. I feel like there's a much
 
 ### Day 8:
 THIS ONE WAS INCREDIBLY FUN! I am actually quite happy with my solution. Although some would find it ugly and whatnot, I believe it is actually a good solution as it manages to be both simple to understand (basically the only weird thing to understand is the head . filter thingies, because I didn't want to use find because it didn't make sense to have Maybe here in my opinion)
+
+### Day 9:
+I came prepared with Data.Matrix ;D. I was waiting to use that one, and here it is! Also, I think I did a fricking DFS using foldl, didn't I?
