@@ -14,7 +14,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 7
 - [x] Day 8
 - [x] Day 9
-- [ ] Day 10
+- [x] Day 10
 - [ ] Day 11
 - [ ] Day 12
 - [ ] Day 13
@@ -61,3 +61,6 @@ THIS ONE WAS INCREDIBLY FUN! I am actually quite happy with my solution. Althoug
 
 ### Day 9:
 I came prepared with Data.Matrix ;D. I was waiting to use that one, and here it is! Also, I think I did a fricking DFS using foldl, didn't I?
+
+### Day 10:
+This one was really easy. Too easy in fact, it was kind of boring :C I mean, it's just matching parenthesis all over again in the end
