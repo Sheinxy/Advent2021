@@ -19,7 +19,7 @@ allXs v0 = moving ++ repeat (last moving)
   where moving = scanl (\x v -> x + v) 0 [v0, v0 - 1 .. 0]
 
 possibleYs :: Range -> [Int]
-possibleYs (low, hi) = filter wouldHitTarget [low .. 1000]
+possibleYs (low, hi) = filter wouldHitTarget [low .. -low - 1]
   where wouldHitTarget v0 = not . null . takeWhile (\n -> low <= n && n <= hi) . dropWhile (> hi) $
                             [n * (1 - n) `div` 2 + n * v0 | n <- [v0 .. ]]
 
