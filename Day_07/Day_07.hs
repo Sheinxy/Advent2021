@@ -15,9 +15,7 @@ median xs
         sorted = sort xs
 
 mean :: [Int] -> Int
-mean xs = fromIntegral $ round $ s / l
-  where s = fromIntegral $ sum xs
-        l = fromIntegral $ length xs
+mean xs = sum xs `div` length xs
 
 fuelTo :: (Int -> Int -> Int) -> Int -> [Int] -> Int
 fuelTo cost x = sum . map (cost x)
@@ -30,5 +28,9 @@ fuel (start, end) cost xs = minimum [fuelTo cost x sorted | x <- [s .. e]]
 
 main = do
   input <- parseInput <$> readFile "input"
-  print $ fuel (median, median) (\x xn -> abs (x - xn)) input
-  print $ fuel ((+) (-2) . mean, (+) 2 . mean) (\x xn -> sum [1 .. abs (x - xn)]) input
+  print $ fuel medians simpleCost input
+  print $ fuel means quadraticCost input
+  where simpleCost x xn = abs (x - xn)
+        quadraticCost x xn = sum [1 .. abs (x - xn)]
+        medians = (median, median)
+        means = ((+) (-1) . mean, (+) 1 . mean)
