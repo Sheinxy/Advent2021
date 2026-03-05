@@ -22,7 +22,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 15
 - [x] Day 16
 - [x] Day 17
-- [ ] Day 18
+- [x] Day 18
 - [ ] Day 19
 - [ ] Day 20
 - [ ] Day 21
@@ -85,3 +85,6 @@ May god have mercy on my soul, as I have sinned. My solution is horrible and I w
 
 ### Day 17:
 I am really disappointed here, all I did was bruteforce my way in. I hope there actually is a clever solution. I think there might be, by solving some equations and whatnot, but I am tired.
+
+### Day 18:
+Explanations were unclear, and doing that in Haskell was a hustle. But I managed. I survived
