@@ -15,7 +15,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 8
 - [x] Day 9
 - [x] Day 10
-- [ ] Day 11
+- [x] Day 11
 - [ ] Day 12
 - [ ] Day 13
 - [ ] Day 14
@@ -64,3 +64,6 @@ I came prepared with Data.Matrix ;D. I was waiting to use that one, and here it 
 
 ### Day 10:
 This one was really easy. Too easy in fact, it was kind of boring :C I mean, it's just matching parenthesis all over again in the end
+
+### Day 11:
+I was really scared about cellular automaton in Haskell because I had a very bad experience last year. Turns out this year I am rolling over them quite easily, good innit?
