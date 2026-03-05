@@ -16,7 +16,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 9
 - [x] Day 10
 - [x] Day 11
-- [ ] Day 12
+- [x] Day 12
 - [ ] Day 13
 - [ ] Day 14
 - [ ] Day 15
@@ -67,3 +67,6 @@ This one was really easy. Too easy in fact, it was kind of boring :C I mean, it'
 
 ### Day 11:
 I was really scared about cellular automaton in Haskell because I had a very bad experience last year. Turns out this year I am rolling over them quite easily, good innit?
+
+### Day 12:
+This wasn't too bad. Kind of had to create my own Graph implementation but I managed to do it so that's good. Not much fan of how I named parameters and functions here but hey, what can you do about that. 
