@@ -11,7 +11,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 4
 - [x] Day 5
 - [x] Day 6
-- [ ] Day 7
+- [x] Day 7
 - [ ] Day 8
 - [ ] Day 9
 - [ ] Day 10
@@ -52,3 +52,6 @@ This one was easy and pretty straightforward, I'm happy with my solution. I just
 
 ### Day 6:
 This one was really fun. Of course I first I did the most naive solution, but then when I went onto part 2 I had to do a smarter one. Of course mine is still not that smart, because I can't modify an element of a list in-place I just decided to do a silly workaround, but it works and it's fine considering the size of the array
+
+### Day 7:
+Okay I am really disappointed in myself for that one. I feel like there's a much better way of doing part 2, but I can't find it for now. I'm going to think a little bit more about it.
