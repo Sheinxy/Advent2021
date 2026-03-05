@@ -8,16 +8,12 @@ move (height, depth, aim) (_, amt) = (height, depth, aim - amt)
 moveAround :: [(String, Int)] -> (Int, Int, Int)
 moveAround = foldl move (0, 0, 0)
 
-readInt :: String -> Int
-readInt = read
-
 parseLine :: [String] -> (String, Int)
-parseLine l = (dir, readInt amt)
+parseLine l = (dir, read amt)
   where (dir, amt) = head . zip l $ tail l
 
 main = do
-  content <- readFile "input"
-  let input = map (parseLine . words) . lines $ content
+  input <- map (parseLine . words) . lines <$> readFile "input"
   let (h, d, a) = moveAround input
   print (h * a)
   print (h * d)
