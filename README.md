@@ -7,7 +7,7 @@ Watch me code in Haskell for 25 days straight
 
 - [x] Day 1
 - [x] Day 2
-- [ ] Day 3
+- [x] Day 3
 - [ ] Day 4
 - [ ] Day 5
 - [ ] Day 6
@@ -40,3 +40,6 @@ I am quite proud of my solution, I'm obviously just trying to show off here but 
 
 ### Day 2:
 This one was easy, I am kind of disappointed that I couldn't do showy one-liners for the move function (I mean, I could with inline if-else I guess)
+
+### Day 3:
+Okay this one was kind of a mess, the first part is pretty okay (I probably could have done something more optimised, but it works just fine), however I am totally unsatisfied by my second part. I think there has to be a way in Haskell to do what I want
