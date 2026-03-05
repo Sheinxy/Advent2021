@@ -12,8 +12,5 @@ parseLine :: [String] -> (String, Int)
 parseLine l = (dir, read amt)
   where (dir, amt) = head . zip l $ tail l
 
-main = do
-  input <- map (parseLine . words) . lines <$> readFile "input"
-  let (h, d, a) = moveAround input
-  print (h * a)
-  print (h * d)
+main = moveAround <$> map (parseLine . words) . lines <$> readFile "input" >>= 
+  \(h, d, a) -> print (h * a) >> print (h * d)
