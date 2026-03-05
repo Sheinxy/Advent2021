@@ -24,10 +24,10 @@ sumRisks :: Matrix Int -> Int
 sumRisks = sum . map (+ 1) . getLowPointsValues
 
 getBasinSize :: Matrix Int -> (Int, Int) -> Int
-getBasinSize m p = snd $ getSize (m, 0) p
+getBasinSize m p = snd $ getSize (setElem 9 p m, 0) p
   where getSize (m, a) p = foldl getSize (marked, a + 1) unvisitedAdj
           where unvisitedAdj = filter ((/= 9) . (m !)) $ getAdjacent m p
-                marked = foldl (flip $ setElem 9) (setElem 9 p m) unvisitedAdj
+                marked = foldl (flip $ setElem 9) m unvisitedAdj
 
 getBasinSizes :: Matrix Int -> [Int]
 getBasinSizes m = map (getBasinSize m) $ getLowPoints m
