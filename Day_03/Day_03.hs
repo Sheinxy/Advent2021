@@ -40,9 +40,7 @@ co2 l = _co2 l 0
 main :: IO ()
 main = do
   input <- parseInput . lines <$> readFile "input"
-  let g = gamma input
-  let e = epsilon input
-  let o = oxygen input
-  let c = co2 input
+  let (g, e) = (gamma input, epsilon input)
+  let (c, o) = (oxygen input, co2 input)
   print (g * e)
   print (c * o)
