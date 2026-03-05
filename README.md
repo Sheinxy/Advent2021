@@ -17,7 +17,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 10
 - [x] Day 11
 - [x] Day 12
-- [ ] Day 13
+- [x] Day 13
 - [ ] Day 14
 - [ ] Day 15
 - [ ] Day 16
@@ -70,3 +70,6 @@ I was really scared about cellular automaton in Haskell because I had a very bad
 
 ### Day 12:
 This wasn't too bad. Kind of had to create my own Graph implementation but I managed to do it so that's good. Not much fan of how I named parameters and functions here but hey, what can you do about that. 
+
+### Day 13:
+This one was really easy. I don't have much to say, Data.Matrix is still a blessing <3
