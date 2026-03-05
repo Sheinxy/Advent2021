@@ -32,10 +32,10 @@ play nums grids (f, l)
         winners = filter checkWin marked
         losers = filter (not . checkWin) marked
         last_winner = not (null winners) && null losers
-        first_winner = f == 0 && not (null winners)
+        first_winner = f == -1 && not (null winners)
         
 main = do
   input <- parseInput . filter (/= "") . lines <$> readFile "input"
-  let (f, l) = play (fst input) (snd input) (0, 0)
+  let (f, l) = play (fst input) (snd input) (-1, -1)
   print f
   print l
