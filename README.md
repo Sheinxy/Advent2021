@@ -21,7 +21,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 14
 - [x] Day 15
 - [x] Day 16
-- [ ] Day 17
+- [x] Day 17
 - [ ] Day 18
 - [ ] Day 19
 - [ ] Day 20
@@ -82,3 +82,6 @@ This is just a Dijsktra thingy. There probably was some way to optimise part 2, 
 
 ### Day 16:
 May god have mercy on my soul, as I have sinned. My solution is horrible and I want to sleep. Oh lord what have I done, this is a mess, please help me
+
+### Day 17:
+I am really disappointed here, all I did was bruteforce my way in. I hope there actually is a clever solution. I think there might be, by solving some equations and whatnot, but I am tired.
