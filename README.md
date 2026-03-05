@@ -19,7 +19,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 12
 - [x] Day 13
 - [x] Day 14
-- [ ] Day 15
+- [x] Day 15
 - [ ] Day 16
 - [ ] Day 17
 - [ ] Day 18
@@ -76,3 +76,6 @@ This one was really easy. I don't have much to say, Data.Matrix is still a bless
 
 ### Day 14:
 This is day 6 all over again, albeit much uglier ono
+
+### Day 15:
+This is just a Dijsktra thingy. There probably was some way to optimise part 2, but I'm far too lazy for that :d
