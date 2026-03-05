@@ -42,6 +42,6 @@ middleCompletionScore xs = scores !! (length scores `div` 2)
   where scores = sort . map getCompletionScore . getIncomplete $ xs
 
 main = do
-  input <- lines <$> readFile "test"
+  input <- lines <$> readFile "input"
   print $ syntaxErrorScore input
   print $ middleCompletionScore input
