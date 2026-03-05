@@ -1,5 +1,7 @@
 module Main where
 
+import Data.List
+
 -- There has to be a beautifully Haskell way to do that but I couldn't find one
 
 increments :: Int -> [Int] -> Int
@@ -10,10 +12,7 @@ increments x (a : b : l)
   | otherwise = increments x (b : l)
 
 sumThree :: [Int] -> [Int]
-sumThree [] = []
-sumThree (_ : []) = []
-sumThree (_ : _ : []) = []
-sumThree (a : b : c : l) = (a + b + c) : sumThree (b : c : l)
+sumThree = map (sum . take 3) . takeWhile ((<=) 3 . length) . tails
 
 readInt :: String -> Int
 readInt = read
