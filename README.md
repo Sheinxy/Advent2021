@@ -18,7 +18,7 @@ Watch me code in Haskell for 25 days straight
 - [x] Day 11
 - [x] Day 12
 - [x] Day 13
-- [ ] Day 14
+- [x] Day 14
 - [ ] Day 15
 - [ ] Day 16
 - [ ] Day 17
@@ -73,3 +73,6 @@ This wasn't too bad. Kind of had to create my own Graph implementation but I man
 
 ### Day 13:
 This one was really easy. I don't have much to say, Data.Matrix is still a blessing <3
+
+### Day 14:
+This is day 6 all over again, albeit much uglier ono
