@@ -21,9 +21,7 @@ fuelTo :: (Int -> Int -> Int) -> Int -> [Int] -> Int
 fuelTo cost x = sum . map (cost x)
 
 fuel :: (([Int] -> Int), ([Int] -> Int)) -> (Int -> Int -> Int) -> [Int] -> Int
-fuel (start, end) cost xs = minimum [fuelTo cost x xs | x <- [s .. e]]
-  where s = start xs
-        e = end xs
+fuel (start, end) cost xs = minimum [fuelTo cost x xs | x <- [start xs .. end xs]]
 
 main = do
   input <- parseInput <$> readFile "input"
