@@ -6,7 +6,7 @@ Guess who's back, back again
 Watch me code in Haskell for 25 days straight
 
 - [x] Day 1
-- [ ] Day 2
+- [x] Day 2
 - [ ] Day 3
 - [ ] Day 4
 - [ ] Day 5
@@ -37,3 +37,6 @@ Watch me code in Haskell for 25 days straight
 
 ### Day 1:
 I am quite proud of my solution, I'm obviously just trying to show off here but it's fun. When I look back at my first solution last year, I feel like I've progressed quite a lot!
+
+### Day 2:
+This one was easy, I am kind of disappointed that I couldn't do showy one-liners for the move and moveAndAim functions (I mean, I could with inline if-else I guess)
