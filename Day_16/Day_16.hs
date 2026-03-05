@@ -70,12 +70,12 @@ sumVersions = foldl addVersion 0
 
 compute :: Packet -> Int
 compute (Literal _ _ _ v) = v
-compute (Operator _ _ t sub) = (packetAction ! t) sub
-  where packetAction = fromList $ zip (filter (/= 4) [0 .. 7]) [sum . map compute, 
-            product . map compute, minimum . map compute, maximum . map compute,
-            \s -> let subcom = map compute s in if head subcom > last subcom then 1 else 0,
-            \s -> let subcom = map compute s in if head subcom < last subcom then 1 else 0,
-            \s -> let subcom = map compute s in if head subcom == last subcom then 1 else 0]
+compute (Operator _ _ t sub) = (packetAction ! t) . map compute $ sub
+  where packetAction = fromList $ zip (filter (/= 4) [0 .. 7]) [
+            sum, product, minimum, maximum,
+            \subcom -> if head subcom > last subcom then 1 else 0,
+            \subcom -> if head subcom < last subcom then 1 else 0,
+            \subcom -> if head subcom == last subcom then 1 else 0]
 
 main = do
   input <- parseInput <$> readFile "input"
